@@ -1,0 +1,19 @@
+[package]
+name = "integer-overflow"
+version = "0.1.0"
+description = "Security Pattern: Integer Overflow/Underflow Vulnerabilities"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "integer_overflow"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
